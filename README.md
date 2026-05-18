@@ -6,6 +6,20 @@
 * **Section:** 2
 
 ------
+# Description about the App
+A Flutter application for managing contacts, designed to demonstrate reactive state management using the **Provider** package and network requests using **http**.
+
+## Features
+- **View Contacts:** Displays a list of all contacts with their names, emails, and phone numbers.
+- **Add Contacts:** Add new contacts through a dedicated form.
+- **Edit Contacts:** Update existing contact details seamlessly.
+- **Delete Contacts (with Confirmation):** Safely remove contacts using a delete button that prompts the user with a confirmation dialog to prevent accidental data loss.
+- **State Management:** Fully reactive UI driven by the `provider` package.
+
+## To run the App
+1) Clone the repository
+2) `flutter pub get` (install dependencies)
+3) `flutter run`
 
 ## Running App screenShots
 
