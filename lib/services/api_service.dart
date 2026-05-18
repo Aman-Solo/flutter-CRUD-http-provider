@@ -13,7 +13,7 @@ class ApiService {
         Iterable list = json.decode(response.body);
         return list.map((model) => Contact.fromJson(model)).toList();
       } else {
-        throw Exception('Failed to Load contacts (Status: ${response.statusCode})');
+        throw Exception('Failed to load contacts (Status: ${response.statusCode})');
       }
     }catch (e){
       throw Exception('Network error fetching contacts: $e');
@@ -40,7 +40,7 @@ class ApiService {
   Future<Contact> updateContact(Contact contact) async{
     try{
       final response = await http.put(
-        Uri.parse('$baseUrl/${contact.id}'),
+        Uri.parse('$baseUrl/${contact.id!}'),
         headers: {'Content-Type': 'application/json; charset=UTF-8'},
         body: json.encode(contact.toJson()),
       );

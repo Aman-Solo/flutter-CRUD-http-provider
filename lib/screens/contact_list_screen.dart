@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/contact_provider.dart';
+import '../screens/contact_form_screen.dart';
 
 class ContactListScreen extends StatefulWidget{
   const ContactListScreen({Key? key}): super(key: key);
@@ -74,8 +75,11 @@ class _ContactListScreenState extends State<ContactListScreen>{
                         IconButton(
                           icon: const Icon(Icons.edit, color: Colors.blue),
                           onPressed: (){
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(content: Text('Edit contact')),
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => ContactFormScreen(contact: contact),
+                              ),
                             );
                           },
                         ),
@@ -105,8 +109,11 @@ class _ContactListScreenState extends State<ContactListScreen>{
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Add new contact')),
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => const ContactFormScreen(),
+            ),
           );
         },
         child: const Icon(Icons.add),
