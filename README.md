@@ -1,17 +1,17 @@
-# assignment_2_http_provider
+# Assignment 2: CRUD API consumption using http and state management using Provider
 
-A new Flutter project.
+## Student information
+* **Name:** Amanuel Solomon
+* **ID:** UGR/0540/16
+* **Section:** 2
 
-## Getting Started
+------
 
-This project is a starting point for a Flutter application.
+## Running App screenShots
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+<img src = "runningApp_screenshots/image.png" width="45%" alt="Contact List Screen" />
+<img src = "runningApp_screenshots/image-1.png" width="45%" alt="Adding a new Contact page" />
+<img src = "runningApp_screenshots/image-2.png" width="45%" alt="Updating a contact page" />
+<img src = "runningApp_screenshots/image-3.png" width="45%" alt="Deleting a contact, shows success delete message at the bottom" />
+</p>
