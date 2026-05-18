@@ -20,7 +20,7 @@ class ApiService {
     }
   }
   // POST: creating a new contact
-  Future<Contact> addContact(Contact contact) async{
+  Future<Contact> createContact(Contact contact) async{
     try{
       final response = await http.post(
         Uri.parse(baseUrl),
